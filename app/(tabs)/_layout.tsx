@@ -14,10 +14,18 @@ export default function Layout() {
       }}
     >
       <Tabs.Screen
-        name="index"
+        name="trip"
         options={{
-          title: "Home",
-          headerShown: false,
+          title: "Trip",
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="airplane-outline" color={color} size={size} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="property"
+        options={{
+          title: "Property",
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="home-outline" color={color} size={size} />
           ),
